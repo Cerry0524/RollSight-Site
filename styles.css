@@ -365,6 +365,10 @@ dd {
   grid-template-columns: repeat(5, minmax(0, 1fr));
 }
 
+.manual-index {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 article {
   min-height: 210px;
   padding: 22px;
@@ -799,6 +803,7 @@ figcaption {
   .theme-switcher,
   .feature-grid-pillars,
   .quickstart-grid,
+  .manual-index,
   .steps-five {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
