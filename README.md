@@ -31,3 +31,4 @@ Then push this folder as the repository root and enable GitHub Pages:
 - `/privacy/index.zh-Hant.html` Traditional Chinese privacy policy
 - `/privacy/index.en.html` English privacy policy
 - `/support/` support and contact page
+- `MAINTENANCE.md` repeatable release and App Store review checklist
