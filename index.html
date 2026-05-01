@@ -36,13 +36,13 @@
           <a class="button secondary" href="./privacy/">Privacy</a>
         </div>
       </div>
-      <div class="hero-showcase" aria-label="RollSight QR 點對點同步畫面">
+      <div class="hero-showcase" aria-label="RollSight 分享模式與 QR 點對點同步入口">
         <div class="phone-frame">
           <img
-            src="./assets/screenshots/hero-broadcast-qr.png"
-            alt="RollSight 產生 QR Code 供另一台裝置掃描同步的畫面"
-            width="423"
-            height="920"
+            src="./assets/screenshots/share-mode-picker.png"
+            alt="RollSight 分享模式選擇畫面，提供 QR 圖片與其他分享方式"
+            width="331"
+            height="720"
             loading="eager"
             fetchpriority="high"
           >
@@ -75,7 +75,7 @@
               <span class="micro-label">UNIT ADMIN</span>
               <div class="pillar-visual" role="img" aria-label="建立單位流程圖">
                 <span>根單位</span>
-                <span>下轄單位</span>
+                <span>子單位</span>
                 <span>人員編組</span>
               </div>
               <h3>建立單位</h3>
@@ -154,16 +154,12 @@
           <div class="section-heading">
             <p class="eyebrow">PRODUCT SCREENS</p>
             <h2 id="screenshots-title">用真實畫面理解 RollSight 的工作流</h2>
-            <p class="narrow">這些畫面來自 1.0 上架截圖素材，依首次設定、單位管理、建立任務、點名摘要、分享模式與訂閱提示排列。</p>
+            <p class="narrow">這些畫面來自 1.0 上架截圖素材，依首次設定、建立任務、點名摘要、分享模式與訂閱提示排列。</p>
           </div>
           <div class="screenshot-grid">
             <figure>
               <img src="./assets/screenshots/first-run-onboarding.png" alt="RollSight 首次啟動與建立單位引導畫面" width="331" height="720" loading="lazy">
               <figcaption>首次啟動時依步驟建立單位與基本資料。</figcaption>
-            </figure>
-            <figure>
-              <img src="./assets/screenshots/unit-list-with-establishment.png" alt="RollSight 單位列表顯示已建立的建制與人員摘要" width="331" height="720" loading="lazy">
-              <figcaption>單位列表顯示已建立的建制，方便回到人員與階層設定。</figcaption>
             </figure>
             <figure>
               <img src="./assets/screenshots/create-task-fab.png" alt="RollSight 點名任務列表右下方建立任務按鈕" width="331" height="720" loading="lazy">
@@ -188,7 +184,7 @@
           <div class="section-heading">
             <p class="eyebrow">THEME TOKENS</p>
             <h2>同一組介面模型，對應五種 App 佈景</h2>
-            <p class="narrow">網站以 Light / Dark 作為長文閱讀基礎；lowlight、camo、nv 僅作為 RollSight App 佈景樣本，保留狀態 pill、緊湊卡片、微標籤與截圖框語彙。</p>
+            <p class="narrow">網站以亮色 / 暗色作為長文閱讀基礎；低亮度、深綠與夜間護眼僅作為 RollSight App 佈景樣本，保留狀態 pill、緊湊卡片、微標籤與截圖框語彙。</p>
           </div>
           <div class="theme-switcher" aria-label="RollSight 五種佈景互動展示">
             <div class="theme-options" role="group" aria-label="選擇佈景預覽">
@@ -214,7 +210,7 @@
               </button>
               <button class="theme-option" type="button" data-theme-option="nv" aria-pressed="false">
                 <span class="theme-swatch" aria-hidden="true"></span>
-                <span>夜光</span>
+                <span>夜間護眼</span>
                 <small></small>
               </button>
             </div>
@@ -323,7 +319,7 @@
             <article>
               <span class="micro-label">GUIDE 01</span>
               <h3>建立單位完整指南</h3>
-              <p>說明首次設定、建立第一個單位、階層樹狀建制、人員編組與 HQ 標記。</p>
+              <p>說明首次設定、建立第一個單位、階層樹狀單位資料、人員編組與主單位標記。</p>
             </article>
             <article>
               <span class="micro-label">GUIDE 02</span>
@@ -420,7 +416,7 @@
         dark: ['暗', '夜間閱讀'],
         lowlight: ['低亮度', '低亮度展示'],
         camo: ['深綠', '深綠展示'],
-        nv: ['夜光', '夜光展示'],
+        nv: ['夜間護眼', '夜間護眼展示'],
       };
       const options = Array.from(document.querySelectorAll('[data-theme-option]'));
       const preview = document.querySelector('.theme-preview-card');
