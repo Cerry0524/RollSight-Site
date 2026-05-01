@@ -466,14 +466,14 @@ article p,
 
 .screenshot-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  gap: 18px;
-  max-width: 1180px;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 16px;
+  max-width: 1360px;
 }
 
 figure {
   margin: 0;
-  padding: 18px;
+  padding: 14px;
   background: var(--site-surface-panel);
   border: 1px solid var(--site-border-subtle);
   border-radius: var(--site-card-radius);
@@ -481,7 +481,7 @@ figure {
 
 figure img {
   display: block;
-  width: min(100%, 300px);
+  width: min(100%, 260px);
   height: auto;
   margin: 0 auto;
   border: 1px solid var(--site-border-subtle);
@@ -821,6 +821,7 @@ figcaption {
   .quickstart-grid,
   .manual-index,
   .trust-grid,
+  .screenshot-grid,
   .steps-five {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
