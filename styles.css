@@ -350,6 +350,10 @@ dd {
   gap: 14px;
 }
 
+.feature-grid-pillars {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .quickstart-grid,
 .manual-index {
   display: grid;
@@ -369,6 +373,65 @@ article p,
 .steps span,
 .narrow {
   color: var(--site-text-secondary);
+}
+
+.feature-card {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.pillar-visual {
+  display: grid;
+  gap: 8px;
+  min-height: 112px;
+  padding: 12px;
+  color: var(--site-text-primary);
+  background: var(--site-surface-soft);
+  border: 1px solid var(--site-border-subtle);
+  border-radius: var(--site-card-radius);
+}
+
+.pillar-visual span,
+.pillar-visual strong {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 28px;
+  padding: 4px 8px;
+  background: var(--site-surface-panel);
+  border: 1px solid var(--site-border-subtle);
+  border-radius: var(--site-card-radius);
+  font-size: 13px;
+  font-weight: 800;
+}
+
+.seat-map-visual {
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+}
+
+.seat-map-visual span {
+  min-height: 22px;
+  padding: 0;
+}
+
+.seat-map-visual span:nth-child(3n + 1) {
+  background: color-mix(in srgb, var(--site-primary) 18%, var(--site-surface-panel));
+}
+
+.report-visual {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+.report-visual strong {
+  color: var(--site-primary-strong);
+  font-family: var(--font-mono);
+  font-size: 20px;
+}
+
+.inbox-visual,
+.trust-visual {
+  align-content: center;
 }
 
 .theme-section {
@@ -661,7 +724,8 @@ figcaption {
 }
 
 @media (max-width: 1180px) {
-  .theme-grid {
+  .theme-grid,
+  .feature-grid-pillars {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
