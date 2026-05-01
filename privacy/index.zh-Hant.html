@@ -54,6 +54,7 @@
 <ul>
 <li><strong>點對點（peer-to-peer）</strong>：透過 QR Code 在兩台裝置間直接傳遞，<strong>不</strong>經過任何伺服器</li>
 <li><strong>無雲端中轉</strong>：我們不擁有、不營運任何雲端基礎架構</li>
+<li><strong>完整性保護</strong>：QR 同步使用簽章驗證、防重放與裝置綁定降低誤收或遭竄改風險；QR 同步的保護重點是來源確認與內容完整性</li>
 <li>您可隨時於設定中關閉裝置綁定</li>
 </ul>
 <h2>4. 訂閱與付款</h2>
@@ -68,6 +69,7 @@
 <li>所有本機資料儲存於 iOS 應用程式 sandbox 內的 SQLite 資料庫</li>
 <li>PIN 碼以單向雜湊（hash）儲存，無法還原</li>
 <li>啟用 Face ID 後，PIN 受 iOS Keychain Secure Enclave 保護</li>
+<li>使用者匯出的備份檔會以 PIN 衍生的金鑰加密；若遺失 PIN，開發者無法替您解開備份</li>
 <li>您可隨時於設定中刪除全部本機資料（解除安裝 App 即同步刪除）</li>
 </ul>
 <h2>6. 您的權利</h2>

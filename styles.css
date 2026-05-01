@@ -355,7 +355,8 @@ dd {
 }
 
 .quickstart-grid,
-.manual-index {
+.manual-index,
+.trust-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
@@ -367,6 +368,11 @@ dd {
 
 .manual-index {
   grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
+.trust-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  max-width: 1080px;
 }
 
 article {
@@ -445,6 +451,11 @@ article p,
 .theme-section {
   background:
     linear-gradient(180deg, var(--site-surface-page), var(--site-surface-soft));
+  border-top: 1px solid var(--site-border-subtle);
+}
+
+.trust-section {
+  background: var(--site-surface-page);
   border-top: 1px solid var(--site-border-subtle);
 }
 
@@ -804,6 +815,7 @@ figcaption {
   .feature-grid-pillars,
   .quickstart-grid,
   .manual-index,
+  .trust-grid,
   .steps-five {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
@@ -815,6 +827,7 @@ figcaption {
   .feature-grid,
   .quickstart-grid,
   .manual-index,
+  .trust-grid,
   .steps,
   .steps-five,
   .screenshot-grid {
