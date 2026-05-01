@@ -464,6 +464,77 @@ article p,
   border-top: 1px solid var(--site-border-subtle);
 }
 
+.flow-stack {
+  display: grid;
+  gap: 18px;
+  max-width: 1440px;
+}
+
+.feature-flow {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.42fr) minmax(0, 1fr);
+  gap: 22px;
+  align-items: start;
+  min-height: 0;
+  padding: 20px;
+}
+
+.feature-flow-compact .flow-track {
+  grid-template-columns: repeat(3, minmax(0, 198px));
+  justify-content: start;
+}
+
+.flow-copy {
+  position: sticky;
+  top: 142px;
+  min-width: 0;
+}
+
+.flow-copy p {
+  color: var(--site-text-secondary);
+}
+
+.flow-track {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+  min-width: 0;
+}
+
+.flow-step {
+  position: relative;
+}
+
+.flow-step::after {
+  position: absolute;
+  top: 142px;
+  right: -20px;
+  z-index: 1;
+  width: 28px;
+  height: 2px;
+  background: var(--site-border-strong);
+  content: "";
+}
+
+.flow-step:last-child::after {
+  content: none;
+}
+
+.step-number {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 34px;
+  min-height: 26px;
+  margin-bottom: 10px;
+  color: var(--site-text-inverse);
+  background: var(--site-primary);
+  border-radius: var(--site-card-radius);
+  font-family: var(--font-mono);
+  font-size: 12px;
+  font-weight: 800;
+}
+
 .screenshot-grid {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
@@ -821,9 +892,22 @@ figcaption {
   .quickstart-grid,
   .manual-index,
   .trust-grid,
+  .feature-flow,
   .screenshot-grid,
   .steps-five {
     grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-flow {
+    grid-template-columns: 1fr;
+  }
+
+  .flow-copy {
+    position: static;
+  }
+
+  .feature-flow-compact .flow-track {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
   }
 }
 
@@ -834,10 +918,24 @@ figcaption {
   .quickstart-grid,
   .manual-index,
   .trust-grid,
+  .flow-track,
   .steps,
   .steps-five,
   .screenshot-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .feature-flow-compact .flow-track {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .flow-step::after {
+    top: auto;
+    right: auto;
+    bottom: -17px;
+    left: 30px;
+    width: 2px;
+    height: 18px;
   }
 
   .hero {
@@ -864,6 +962,13 @@ figcaption {
     right: auto;
     left: 30px;
     bottom: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flow-track,
+  .feature-flow-compact .flow-track {
+    grid-template-columns: 1fr;
   }
 }
 
