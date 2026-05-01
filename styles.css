@@ -76,6 +76,7 @@ body {
   background: var(--site-surface-page);
   color: var(--site-text-primary);
   line-height: 1.65;
+  overflow-x: hidden;
 }
 
 a { color: inherit; }
@@ -130,6 +131,11 @@ nav a,
   padding: clamp(56px, 8vw, 104px) clamp(18px, 6vw, 88px) clamp(36px, 6vw, 72px);
 }
 
+.hero-copy,
+.hero-card {
+  min-width: 0;
+}
+
 .eyebrow,
 .micro-label {
   font-family: var(--font-mono);
@@ -162,6 +168,11 @@ h1 {
   margin-bottom: 22px;
   font-size: 56px;
   line-height: 1.05;
+  overflow-wrap: anywhere;
+}
+
+h1 span {
+  display: block;
 }
 
 h2 {
@@ -179,6 +190,7 @@ h3 {
   max-width: 720px;
   color: var(--site-text-secondary);
   font-size: 20px;
+  overflow-wrap: anywhere;
 }
 
 .hero-actions {
@@ -243,6 +255,7 @@ dt {
 dd {
   font-weight: 800;
   text-align: right;
+  overflow-wrap: anywhere;
 }
 
 .section {
@@ -545,8 +558,26 @@ article p,
     padding-top: 40px;
   }
 
+  .hero-copy,
+  .hero-card {
+    max-width: calc(100vw - 60px);
+  }
+
   h1 {
-    font-size: 38px;
+    max-width: 300px;
+  }
+
+  .lead {
+    max-width: 280px;
+  }
+
+  .hero-card {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 34px;
+    word-break: break-all;
   }
 
   h2,
@@ -556,5 +587,16 @@ article p,
 
   .lead {
     font-size: 18px;
+    word-break: break-all;
+  }
+
+  .hero-card div {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 4px;
+  }
+
+  dd {
+    text-align: left;
   }
 }
