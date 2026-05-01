@@ -496,7 +496,7 @@ article p,
 
 .flow-track {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
   min-width: 0;
 }
@@ -922,11 +922,11 @@ figcaption {
   .steps,
   .steps-five,
   .screenshot-grid {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .feature-flow-compact .flow-track {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 
   .flow-step::after {
@@ -962,6 +962,13 @@ figcaption {
     right: auto;
     left: 30px;
     bottom: 18px;
+  }
+}
+
+@media (max-width: 640px) {
+  .flow-track,
+  .feature-flow-compact .flow-track {
+    grid-template-columns: 1fr;
   }
 }
 
