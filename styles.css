@@ -294,6 +294,46 @@ dd {
   padding: clamp(52px, 7vw, 88px) clamp(18px, 6vw, 88px);
 }
 
+.homepage-tabs {
+  border-top: 1px solid var(--site-border-subtle);
+}
+
+.tab-list {
+  position: sticky;
+  top: 65px;
+  z-index: 8;
+  display: flex;
+  gap: 8px;
+  padding: 12px clamp(18px, 6vw, 88px);
+  overflow-x: auto;
+  background: color-mix(in srgb, var(--site-surface-page) 94%, transparent);
+  border-bottom: 1px solid var(--site-border-subtle);
+  backdrop-filter: blur(16px);
+}
+
+.tab-button {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 44px;
+  padding: 8px 14px;
+  color: var(--site-text-secondary);
+  border: 1px solid var(--site-border-subtle);
+  border-radius: var(--site-card-radius);
+  text-decoration: none;
+  white-space: nowrap;
+}
+
+.tab-button[aria-selected="true"] {
+  color: var(--site-text-inverse);
+  background: var(--site-primary);
+  border-color: var(--site-primary);
+}
+
+.tab-panel[hidden] {
+  display: none;
+}
+
 .section-heading {
   max-width: 900px;
   margin-bottom: 28px;
@@ -305,6 +345,13 @@ dd {
 }
 
 .feature-grid {
+  display: grid;
+  grid-template-columns: repeat(4, minmax(0, 1fr));
+  gap: 14px;
+}
+
+.quickstart-grid,
+.manual-index {
   display: grid;
   grid-template-columns: repeat(4, minmax(0, 1fr));
   gap: 14px;
@@ -622,6 +669,8 @@ figcaption {
 @media (max-width: 920px) {
   .hero,
   .feature-grid,
+  .quickstart-grid,
+  .manual-index,
   .steps,
   .screenshot-grid {
     grid-template-columns: 1fr;
@@ -636,6 +685,10 @@ figcaption {
   .site-header {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .tab-list {
+    top: 113px;
   }
 
   .manual-section {

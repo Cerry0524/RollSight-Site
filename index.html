@@ -15,9 +15,8 @@
       <span>到齊 RollSight</span>
     </a>
     <nav aria-label="主要導覽">
-      <a href="#features">功能</a>
-      <a href="#themes">佈景</a>
-      <a href="#workflow">使用方式</a>
+      <a href="#features">特色展示</a>
+      <a href="#quickstart">快速上手</a>
       <a href="#manual">完整手冊</a>
       <a href="./support/">支援</a>
       <a href="./privacy/">隱私政策</a>
@@ -31,7 +30,7 @@
         <h1><span>為小型單位設計的</span><span>點名與行政工具</span></h1>
         <p class="lead">RollSight 協助你建立單位、安排座位圖、執行日常點名、匯出報告，並透過 QR Code 在裝置間同步資料。資料預設留在本機，不需要雲端帳號。</p>
         <div class="hero-actions">
-          <a class="button primary" href="#workflow">快速上手</a>
+          <a class="button primary" href="#quickstart">快速上手</a>
           <a class="button secondary" href="#manual">完整手冊</a>
           <a class="button secondary" href="./support/">支援</a>
           <a class="button secondary" href="./privacy/">Privacy</a>
@@ -57,150 +56,206 @@
       <a class="hero-next" href="#features">往下看主要功能</a>
     </section>
 
-    <section id="features" class="section">
-      <h2>主要功能</h2>
-      <div class="feature-grid">
-        <article>
-          <span class="micro-label">UNIT ADMIN</span>
-          <h3>單位建制管理</h3>
-          <p>以階層方式管理單位、人員與職務，適合小型組織的日常行政。</p>
-        </article>
-        <article>
-          <span class="micro-label">SEAT MAP</span>
-          <h3>互動式座位圖</h3>
-          <p>用座位圖快速點選到、缺、事故狀態，支援座位調整與多種顯示主題。</p>
-        </article>
-        <article>
-          <span class="micro-label">REPORT</span>
-          <h3>點名任務與報告</h3>
-          <p>建立日常點名任務，記錄出席狀態，並匯出 PNG 報告供回報或留存。</p>
-        </article>
-        <article>
-          <span class="micro-label">P2P QR</span>
-          <h3>QR 點對點同步</h3>
-          <p>透過 QR Code 交換建制與點名資料，不需要伺服器或雲端帳號。</p>
-        </article>
+    <section class="homepage-tabs" aria-label="首頁內容">
+      <div class="tab-list" role="tablist" aria-label="首頁內容分頁">
+        <a id="tab-features" class="tab-button" role="tab" href="#features" aria-controls="features" aria-selected="true">特色展示</a>
+        <a id="tab-quickstart" class="tab-button" role="tab" href="#quickstart" aria-controls="quickstart" aria-selected="false">快速上手</a>
+        <a id="tab-manual" class="tab-button" role="tab" href="#manual" aria-controls="manual" aria-selected="false">完整手冊</a>
       </div>
-    </section>
 
-    <section class="section screenshot-section" aria-labelledby="screenshots-title">
-      <div class="section-heading">
-        <p class="eyebrow">PRODUCT SCREENS</p>
-        <h2 id="screenshots-title">用真實畫面理解 RollSight 的工作流</h2>
-        <p class="narrow">從首次設定、日常點名到報告彙整，介面以緊湊卡片、狀態標籤與清楚的操作區塊呈現。</p>
-      </div>
-      <div class="screenshot-grid">
-        <figure>
-          <img src="./assets/screenshots/first-run-onboarding.png" alt="RollSight 首次啟動與建立單位引導畫面" width="331" height="720" loading="lazy">
-          <figcaption>首次啟動時依步驟建立單位與基本資料。</figcaption>
-        </figure>
-        <figure>
-          <img src="./assets/screenshots/attendance-summary.png" alt="RollSight 點名摘要與統計畫面" width="331" height="720" loading="lazy">
-          <figcaption>點名摘要以狀態與數字快速檢視回報結果。</figcaption>
-        </figure>
-      </div>
-    </section>
+      <div id="features" class="tab-panel" role="tabpanel" aria-labelledby="tab-features">
+        <section class="section">
+          <h2>主要功能</h2>
+          <div class="feature-grid">
+            <article>
+              <span class="micro-label">UNIT ADMIN</span>
+              <h3>單位建制管理</h3>
+              <p>以階層方式管理單位、人員與職務，適合小型組織的日常行政。</p>
+            </article>
+            <article>
+              <span class="micro-label">SEAT MAP</span>
+              <h3>互動式座位圖</h3>
+              <p>用座位圖快速點選到、缺、事故狀態，支援座位調整與多種顯示主題。</p>
+            </article>
+            <article>
+              <span class="micro-label">REPORT</span>
+              <h3>點名任務與報告</h3>
+              <p>建立日常點名任務，記錄出席狀態，並匯出 PNG 報告供回報或留存。</p>
+            </article>
+            <article>
+              <span class="micro-label">P2P QR</span>
+              <h3>QR 點對點同步</h3>
+              <p>透過 QR Code 交換建制與點名資料，不需要伺服器或雲端帳號。</p>
+            </article>
+          </div>
+        </section>
 
-    <section id="themes" class="section theme-section">
-      <div class="section-heading">
-        <p class="eyebrow">THEME TOKENS</p>
-        <h2>同一組介面模型，對應五種 App 佈景</h2>
-        <p class="narrow">網站以 Light / Dark 作為長文閱讀基礎；lowlight、camo、nv 僅作為 RollSight App 佈景樣本，保留狀態 pill、緊湊卡片、微標籤與截圖框語彙。</p>
-      </div>
-      <div class="theme-grid" aria-label="RollSight 五種佈景展示">
-        <article class="theme-card" data-theme-preview="light">
-          <span class="micro-label">LIGHT</span>
-          <h3>日間閱讀</h3>
-          <div class="screenshot-frame">
-            <div class="frame-bar"></div>
-            <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
-            <div class="pill-row">
-              <span class="status-pill present">到位</span>
-              <span class="status-pill incident">事故</span>
-              <span class="status-pill pending">待回報</span>
-            </div>
+        <section class="section screenshot-section" aria-labelledby="screenshots-title">
+          <div class="section-heading">
+            <p class="eyebrow">PRODUCT SCREENS</p>
+            <h2 id="screenshots-title">用真實畫面理解 RollSight 的工作流</h2>
+            <p class="narrow">從首次設定、日常點名到報告彙整，介面以緊湊卡片、狀態標籤與清楚的操作區塊呈現。</p>
           </div>
-        </article>
-        <article class="theme-card" data-theme-preview="dark">
-          <span class="micro-label">DARK</span>
-          <h3>夜間閱讀</h3>
-          <div class="screenshot-frame">
-            <div class="frame-bar"></div>
-            <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
-            <div class="pill-row">
-              <span class="status-pill present">到位</span>
-              <span class="status-pill incident">事故</span>
-              <span class="status-pill pending">待回報</span>
-            </div>
+          <div class="screenshot-grid">
+            <figure>
+              <img src="./assets/screenshots/first-run-onboarding.png" alt="RollSight 首次啟動與建立單位引導畫面" width="331" height="720" loading="lazy">
+              <figcaption>首次啟動時依步驟建立單位與基本資料。</figcaption>
+            </figure>
+            <figure>
+              <img src="./assets/screenshots/attendance-summary.png" alt="RollSight 點名摘要與統計畫面" width="331" height="720" loading="lazy">
+              <figcaption>點名摘要以狀態與數字快速檢視回報結果。</figcaption>
+            </figure>
           </div>
-        </article>
-        <article class="theme-card" data-theme-preview="lowlight">
-          <span class="micro-label">LOWLIGHT</span>
-          <h3>紅光展示</h3>
-          <div class="screenshot-frame">
-            <div class="frame-bar"></div>
-            <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
-            <div class="pill-row">
-              <span class="status-pill present">到位</span>
-              <span class="status-pill incident">事故</span>
-              <span class="status-pill pending">待回報</span>
-            </div>
-          </div>
-        </article>
-        <article class="theme-card" data-theme-preview="camo">
-          <span class="micro-label">CAMO</span>
-          <h3>野外展示</h3>
-          <div class="screenshot-frame">
-            <div class="frame-bar"></div>
-            <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
-            <div class="pill-row">
-              <span class="status-pill present">到位</span>
-              <span class="status-pill incident">事故</span>
-              <span class="status-pill pending">待回報</span>
-            </div>
-          </div>
-        </article>
-        <article class="theme-card" data-theme-preview="nv">
-          <span class="micro-label">NV</span>
-          <h3>夜視展示</h3>
-          <div class="screenshot-frame">
-            <div class="frame-bar"></div>
-            <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
-            <div class="pill-row">
-              <span class="status-pill present">到位</span>
-              <span class="status-pill incident">事故</span>
-              <span class="status-pill pending">待回報</span>
-            </div>
-          </div>
-        </article>
-      </div>
-    </section>
+        </section>
 
-    <section id="workflow" class="section band">
-      <h2>基本使用流程</h2>
-      <ol class="steps">
-        <li><strong>首次啟動</strong><span>設定 PIN，建立第一個單位或使用快速建立流程。</span></li>
-        <li><strong>建立座位圖</strong><span>設定座位數、分區與人員配置，作為日常點名基礎。</span></li>
-        <li><strong>執行點名</strong><span>建立點名任務，在座位圖或名冊中標記出席狀態。</span></li>
-        <li><strong>匯出與同步</strong><span>產生報告圖片，或用 QR Code 傳送資料給另一台裝置。</span></li>
-      </ol>
-    </section>
-
-    <section class="section">
-      <h2>隱私原則</h2>
-      <p class="narrow">RollSight 是離線優先工具。你建立的單位、人員、點名與座位圖資料儲存在裝置本機；跨裝置資料傳輸透過 QR Code 點對點進行，並以簽章驗證、防重放與裝置綁定降低誤收或遭竄改風險。App 只使用匿名崩潰與效能資料來修復問題。</p>
-      <a class="text-link" href="./privacy/">查看完整 Privacy Policy</a>
-    </section>
-
-    <section id="manual" class="section manual-section">
-      <div class="manual-copy">
-        <p class="eyebrow">USER GUIDE</p>
-        <h2>完整手冊入口</h2>
-        <p class="narrow">完整手冊會依首頁的使用流程延伸，整理首次設定、建立座位圖、執行點名、匯出報告與 QR 同步等章節。需要協助時，也可以先從支援頁面聯絡開發者。</p>
+        <section class="section theme-section">
+          <div class="section-heading">
+            <p class="eyebrow">THEME TOKENS</p>
+            <h2>同一組介面模型，對應五種 App 佈景</h2>
+            <p class="narrow">網站以 Light / Dark 作為長文閱讀基礎；lowlight、camo、nv 僅作為 RollSight App 佈景樣本，保留狀態 pill、緊湊卡片、微標籤與截圖框語彙。</p>
+          </div>
+          <div class="theme-grid" aria-label="RollSight 五種佈景展示">
+            <article class="theme-card" data-theme-preview="light">
+              <span class="micro-label">LIGHT</span>
+              <h3>日間閱讀</h3>
+              <div class="screenshot-frame">
+                <div class="frame-bar"></div>
+                <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
+                <div class="pill-row">
+                  <span class="status-pill present">到位</span>
+                  <span class="status-pill incident">事故</span>
+                  <span class="status-pill pending">待回報</span>
+                </div>
+              </div>
+            </article>
+            <article class="theme-card" data-theme-preview="dark">
+              <span class="micro-label">DARK</span>
+              <h3>夜間閱讀</h3>
+              <div class="screenshot-frame">
+                <div class="frame-bar"></div>
+                <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
+                <div class="pill-row">
+                  <span class="status-pill present">到位</span>
+                  <span class="status-pill incident">事故</span>
+                  <span class="status-pill pending">待回報</span>
+                </div>
+              </div>
+            </article>
+            <article class="theme-card" data-theme-preview="lowlight">
+              <span class="micro-label">LOWLIGHT</span>
+              <h3>紅光展示</h3>
+              <div class="screenshot-frame">
+                <div class="frame-bar"></div>
+                <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
+                <div class="pill-row">
+                  <span class="status-pill present">到位</span>
+                  <span class="status-pill incident">事故</span>
+                  <span class="status-pill pending">待回報</span>
+                </div>
+              </div>
+            </article>
+            <article class="theme-card" data-theme-preview="camo">
+              <span class="micro-label">CAMO</span>
+              <h3>野外展示</h3>
+              <div class="screenshot-frame">
+                <div class="frame-bar"></div>
+                <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
+                <div class="pill-row">
+                  <span class="status-pill present">到位</span>
+                  <span class="status-pill incident">事故</span>
+                  <span class="status-pill pending">待回報</span>
+                </div>
+              </div>
+            </article>
+            <article class="theme-card" data-theme-preview="nv">
+              <span class="micro-label">NV</span>
+              <h3>夜視展示</h3>
+              <div class="screenshot-frame">
+                <div class="frame-bar"></div>
+                <div class="mock-row"><span>37/39</span><b>ACTIVE</b></div>
+                <div class="pill-row">
+                  <span class="status-pill present">到位</span>
+                  <span class="status-pill incident">事故</span>
+                  <span class="status-pill pending">待回報</span>
+                </div>
+              </div>
+            </article>
+          </div>
+        </section>
       </div>
-      <div class="manual-actions">
-        <a class="button primary" href="#workflow">回到快速上手</a>
-        <a class="button secondary" href="./support/">前往支援頁</a>
+
+      <div id="quickstart" class="tab-panel" role="tabpanel" aria-labelledby="tab-quickstart" hidden>
+        <section class="section band">
+          <h2>快速上手流程</h2>
+          <ol class="steps">
+            <li><strong>首次啟動</strong><span>設定 PIN，建立第一個單位或使用快速建立流程。</span></li>
+            <li><strong>建立座位圖</strong><span>設定座位數、分區與人員配置，作為日常點名基礎。</span></li>
+            <li><strong>執行點名</strong><span>建立點名任務，在座位圖或名冊中標記出席狀態。</span></li>
+            <li><strong>匯出與同步</strong><span>產生報告圖片，或用 QR Code 傳送資料給另一台裝置。</span></li>
+          </ol>
+        </section>
+        <section class="section">
+          <div class="quickstart-grid">
+            <article>
+              <span class="micro-label">STEP 01</span>
+              <h3>先建立可點名的單位</h3>
+              <p>從單位名稱、人員名冊與基本階層開始，之後的座位圖、任務與報告都會使用同一份資料。</p>
+            </article>
+            <article>
+              <span class="micro-label">STEP 02</span>
+              <h3>把座位圖當作日常入口</h3>
+              <p>座位圖讓你在點名時直接看位置、選狀態、補事故原因，不需要來回翻找名冊。</p>
+            </article>
+            <article>
+              <span class="micro-label">STEP 03</span>
+              <h3>用 QR 完成點對點交接</h3>
+              <p>需要轉交或彙整資料時，使用 QR Code 傳送給另一台裝置；流程以簽章驗證與防重放降低誤收風險。</p>
+            </article>
+          </div>
+        </section>
+      </div>
+
+      <div id="manual" class="tab-panel" role="tabpanel" aria-labelledby="tab-manual" hidden>
+        <section class="section manual-section">
+          <div class="manual-copy">
+            <p class="eyebrow">USER GUIDE</p>
+            <h2>完整手冊入口</h2>
+            <p class="narrow">完整手冊會依首頁的使用流程延伸，整理首次設定、建立座位圖、執行點名、匯出報告與 QR 同步等章節。需要協助時，也可以先從支援頁面聯絡開發者。</p>
+          </div>
+          <div class="manual-actions">
+            <a class="button primary" href="#quickstart">回到快速上手</a>
+            <a class="button secondary" href="./support/">前往支援頁</a>
+          </div>
+        </section>
+        <section class="section">
+          <div class="manual-index">
+            <article>
+              <span class="micro-label">GUIDE</span>
+              <h3>首次設定</h3>
+              <p>設定 PIN、建立第一個單位，確認日後資料都以本機為主要保存位置。</p>
+            </article>
+            <article>
+              <span class="micro-label">GUIDE</span>
+              <h3>座位圖與人員</h3>
+              <p>調整座位、分區、人員與職務，讓點名畫面符合實際工作方式。</p>
+            </article>
+            <article>
+              <span class="micro-label">GUIDE</span>
+              <h3>點名任務</h3>
+              <p>建立任務、標記到位或事故狀態，並在摘要畫面檢查回報結果。</p>
+            </article>
+            <article>
+              <span class="micro-label">GUIDE</span>
+              <h3>匯出與 QR 同步</h3>
+              <p>匯出報告圖片，或透過 QR Code 在裝置間傳送需要交接的資料。</p>
+            </article>
+          </div>
+        </section>
+        <section class="section">
+          <h2>隱私原則</h2>
+          <p class="narrow">RollSight 是離線優先工具。你建立的單位、人員、點名與座位圖資料儲存在裝置本機；跨裝置資料傳輸透過 QR Code 點對點進行，並以簽章驗證、防重放與裝置綁定降低誤收或遭竄改風險。App 只使用匿名崩潰與效能資料來修復問題。</p>
+          <a class="text-link" href="./privacy/">查看完整 Privacy Policy</a>
+        </section>
       </div>
     </section>
   </main>
@@ -210,5 +265,49 @@
     <a href="./support/">Support</a>
     <a href="./privacy/">Privacy Policy</a>
   </footer>
+  <script>
+    (() => {
+      const tabs = Array.from(document.querySelectorAll('[role="tab"]'));
+      const panels = Array.from(document.querySelectorAll('[role="tabpanel"]'));
+      const validIds = new Set(panels.map((panel) => panel.id));
+
+      function activateTab(id, shouldFocus = false, shouldScroll = false) {
+        const nextId = validIds.has(id) ? id : 'features';
+
+        tabs.forEach((tab) => {
+          const isActive = tab.getAttribute('aria-controls') === nextId;
+          tab.setAttribute('aria-selected', String(isActive));
+          tab.tabIndex = isActive ? 0 : -1;
+          if (isActive && shouldFocus) tab.focus();
+        });
+
+        panels.forEach((panel) => {
+          panel.hidden = panel.id !== nextId;
+        });
+
+        if (shouldScroll) {
+          const target = document.getElementById(nextId);
+          window.scrollTo({ top: target.offsetTop, behavior: 'auto' });
+        }
+      }
+
+      tabs.forEach((tab) => {
+        tab.addEventListener('click', (event) => {
+          const id = tab.getAttribute('aria-controls');
+          activateTab(id, false);
+        });
+      });
+
+      window.addEventListener('hashchange', () => {
+        activateTab(window.location.hash.slice(1), false, true);
+      });
+
+      const initialId = window.location.hash.slice(1);
+      activateTab(initialId, false, validIds.has(initialId));
+      if (validIds.has(initialId)) {
+        window.setTimeout(() => activateTab(initialId, false, true), 0);
+      }
+    })();
+  </script>
 </body>
 </html>
