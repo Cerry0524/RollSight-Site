@@ -361,6 +361,10 @@ dd {
   gap: 14px;
 }
 
+.quickstart-grid {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 article {
   min-height: 210px;
   padding: 22px;
@@ -713,6 +717,10 @@ figcaption {
   list-style: none;
 }
 
+.steps-five {
+  grid-template-columns: repeat(5, minmax(0, 1fr));
+}
+
 .steps li {
   padding-top: 18px;
   border-top: 3px solid var(--site-primary);
@@ -789,7 +797,9 @@ figcaption {
 @media (max-width: 1180px) {
   .theme-grid,
   .theme-switcher,
-  .feature-grid-pillars {
+  .feature-grid-pillars,
+  .quickstart-grid,
+  .steps-five {
     grid-template-columns: repeat(2, minmax(0, 1fr));
   }
 }
@@ -801,6 +811,7 @@ figcaption {
   .quickstart-grid,
   .manual-index,
   .steps,
+  .steps-five,
   .screenshot-grid {
     grid-template-columns: 1fr;
   }
