@@ -54,6 +54,7 @@
 <ul>
 <li><strong>Peer-to-peer:</strong> data passes directly between two devices via QR code, <strong>never</strong> through any server</li>
 <li><strong>No cloud relay:</strong> we operate no cloud infrastructure</li>
+<li><strong>Integrity protection:</strong> QR sync uses signature verification, replay protection, and device binding to reduce accidental acceptance or tampering risk; QR sync focuses on source verification and payload integrity</li>
 <li>You can disable device binding at any time in Settings</li>
 </ul>
 <h2>4. Subscriptions &amp; Payment</h2>
@@ -68,6 +69,7 @@
 <li>All local data is stored within the iOS app sandbox in SQLite</li>
 <li>PIN is stored as a one-way hash and cannot be recovered</li>
 <li>With Face ID enabled, the PIN is protected by iOS Keychain Secure Enclave</li>
+<li>User-exported backup files are encrypted with a key derived from the PIN; if the PIN is lost, the developer cannot decrypt the backup for you</li>
 <li>You may delete all local data at any time within the App (uninstalling the App also fully deletes it)</li>
 </ul>
 <h2>6. Your Rights</h2>
