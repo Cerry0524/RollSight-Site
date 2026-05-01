@@ -790,6 +790,11 @@ figcaption {
   font-size: 44px;
 }
 
+.policy-page p,
+.policy-page li {
+  overflow-wrap: anywhere;
+}
+
 .policy-page table {
   width: 100%;
   border-collapse: collapse;
