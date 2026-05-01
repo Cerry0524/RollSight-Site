@@ -1,0 +1,99 @@
+<!doctype html>
+<html lang="zh-Hant">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>到齊 RollSight — 隱私政策</title>
+  <meta name="description" content="到齊 RollSight 隱私政策。">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="policy-page">
+  <header class="site-header">
+    <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="36" height="36"><span>到齊 RollSight</span></a>
+    <nav aria-label="主要導覽">
+      <a href="../">首頁</a>
+      <a href="../support/">支援</a>
+      <a href="./index.en.html">English</a>
+    </nav>
+  </header>
+  <main>
+<h1>到齊 RollSight — 隱私政策</h1>
+<p>最後更新：2026-04-30</p>
+<p>適用版本：1.0 起</p>
+<h2>1. 我們是誰</h2>
+<p>「到齊」（以下簡稱「本 App」）是由獨立開發者開發的離線單機點名與單位行政工具。</p>
+<p><strong>本 App 與任何政府、軍方單位無關。</strong></p>
+<h2>2. 我們收集什麼資料</h2>
+<h3>2.1 您主動建立的資料</h3>
+<ul>
+<li>單位資訊（單位名稱、編制、人員姓名、職務）</li>
+<li>點名任務記錄（出席狀態、時間戳記、備註）</li>
+<li>座位圖配置</li>
+<li>您設定的 PIN 碼（雜湊後儲存於本機）</li>
+</ul>
+<p><strong>這些資料 100% 儲存於您的裝置本機（SQLite）</strong>，不傳輸至任何伺服器。</p>
+<h3>2.2 我們透過 SDK 收集的匿名資料</h3>
+<ul>
+<li><strong>崩潰報告</strong>（透過 Sentry）：當 App 崩潰時，記錄崩潰堆疊、裝置型號、作業系統版本，<strong>不</strong>含使用者識別資訊（姓名、email、IP、與您連結的裝置 ID）</li>
+<li><strong>效能資料</strong>（透過 Sentry）：匿名的 App 啟動時間、畫面切換延遲，用於最佳化</li>
+</ul>
+<p>崩潰與效能資料用於修復 bug 與最佳化體驗。</p>
+<h3>2.3 我們<strong>不</strong>收集</h3>
+<ul>
+<li>帳號（本 App 無使用者帳號系統）</li>
+<li>位置資訊</li>
+<li>連絡人 / 通訊錄</li>
+<li>健康 / 健身資料</li>
+<li>行銷追蹤資料</li>
+<li>廣告 ID（IDFA）</li>
+<li>任何與您個人連結的識別資訊（PII）</li>
+</ul>
+<h2>3. 跨裝置資料傳輸（QR Code 點對點）</h2>
+<p>本 App 提供「裝置綁定」與「建制 / 點名資料 QR 同步」功能。所有跨裝置傳輸：</p>
+<ul>
+<li><strong>點對點（peer-to-peer）</strong>：透過 QR Code 在兩台裝置間直接傳遞，<strong>不</strong>經過任何伺服器</li>
+<li><strong>無雲端中轉</strong>：我們不擁有、不營運任何雲端基礎架構</li>
+<li>您可隨時於設定中關閉裝置綁定</li>
+</ul>
+<h2>4. 訂閱與付款</h2>
+<p>本 App 透過 Apple In-App Purchase（透過 RevenueCat 結算服務）提供 BASIC 與 FULL 訂閱：</p>
+<ul>
+<li>付款由 Apple App Store 處理，本 App 不接觸您的信用卡資訊</li>
+<li>RevenueCat 用於追蹤訂閱 entitlement 狀態，僅儲存 Apple 提供的匿名 receipt token，不含個人資料</li>
+<li>訂閱到期或取消後，您所有本機資料保留不刪除（僅功能 gate 重新生效）</li>
+</ul>
+<h2>5. 資料儲存與保護</h2>
+<ul>
+<li>所有本機資料儲存於 iOS 應用程式 sandbox 內的 SQLite 資料庫</li>
+<li>PIN 碼以單向雜湊（hash）儲存，無法還原</li>
+<li>啟用 Face ID 後，PIN 受 iOS Keychain Secure Enclave 保護</li>
+<li>您可隨時於設定中刪除全部本機資料（解除安裝 App 即同步刪除）</li>
+</ul>
+<h2>6. 您的權利</h2>
+<p>依據中華民國個人資料保護法（PDPA）：</p>
+<ul>
+<li>您可隨時查詢、複製、修改、刪除本機儲存的所有資料（直接於 App 內操作）</li>
+<li>您可關閉 Sentry 崩潰回報（設定 → 隱私 → 關閉診斷資料）</li>
+<li>解除安裝 App 等同行使「請求刪除」之權利</li>
+</ul>
+<h2>7. 兒童資料</h2>
+<p>本 App 適用 4+ 年齡分級。我們不主動收集未成年人之個人資料。</p>
+<h2>8. 第三方服務</h2>
+<table>
+<thead><tr><th>服務</th><th>用途</th><th>資料類型</th></tr></thead><tbody>
+<tr><td>Apple App Store / IAP</td><td>訂閱付款</td><td>由 Apple 收集，依 <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></td></tr>
+<tr><td>RevenueCat</td><td>訂閱 entitlement 管理</td><td>匿名 receipt token，<a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></td></tr>
+<tr><td>Sentry</td><td>崩潰與效能診斷</td><td>崩潰堆疊（無 PII），<a href="https://sentry.io/privacy/">Sentry Privacy Policy</a></td></tr>
+</tbody></table>
+<h2>9. 政策變更</h2>
+<p>本政策若有重大變更，將於 App 內以彈窗通知並更新本頁。次要修訂直接更新本頁日期。</p>
+<h2>10. 聯絡我們</h2>
+<ul>
+<li>隱私問題：cerry0524@gmail.com</li>
+<li>GitHub Issues：<a href="https://github.com/Cerry0524/RollSight/issues">https://github.com/Cerry0524/RollSight/issues</a></li>
+</ul>
+<p><a href="./index.en.html">English version</a></p>
+  </main>
+</body>
+</html>

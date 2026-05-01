@@ -1,0 +1,98 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>RollSight — Privacy Policy</title>
+  <meta name="description" content="RollSight Privacy Policy.">
+  <link rel="icon" href="../assets/icon.png">
+  <link rel="stylesheet" href="../styles.css">
+</head>
+<body class="policy-page">
+  <header class="site-header">
+    <a class="brand" href="../"><img src="../assets/icon.png" alt="" width="36" height="36"><span>到齊 RollSight</span></a>
+    <nav aria-label="主要導覽">
+      <a href="../">首頁</a>
+      <a href="../support/">支援</a>
+      <a href="./index.zh-Hant.html">繁體中文</a>
+    </nav>
+  </header>
+  <main>
+<h1>RollSight — Privacy Policy</h1>
+<p>Last updated: 2026-04-30</p>
+<p>Applies to: version 1.0 and later</p>
+<h2>1. Who We Are</h2>
+<p>RollSight ("the App") is an offline, standalone roll-call and unit administration tool developed by an independent developer.</p>
+<p><strong>The App is not affiliated with any government or military authority.</strong></p>
+<h2>2. What We Collect</h2>
+<h3>2.1 Data You Create</h3>
+<ul>
+<li>Unit information (unit names, structure, member names, roles)</li>
+<li>Roll-call task records (attendance status, timestamps, notes)</li>
+<li>Seat map configurations</li>
+<li>The PIN code you set (stored as a hash on your device)</li>
+</ul>
+<p><strong>All of this data is stored 100% locally on your device (SQLite)</strong>, never transmitted to any server.</p>
+<h3>2.2 Anonymous Data via SDKs</h3>
+<ul>
+<li><strong>Crash reports (via Sentry):</strong> when the app crashes, the stack trace, device model, and OS version are logged. <strong>No</strong> user identifiers (name, email, IP, device ID linked to you).</li>
+<li><strong>Performance data (via Sentry):</strong> anonymous startup time and frame timing, used for optimization.</li>
+</ul>
+<p>Crash and performance data are used solely for bug fixing and performance improvement.</p>
+<h3>2.3 What We Do <strong>Not</strong> Collect</h3>
+<ul>
+<li>Accounts (the App has no user account system)</li>
+<li>Location</li>
+<li>Contacts / Address Book</li>
+<li>Health / Fitness data</li>
+<li>Marketing tracking data</li>
+<li>Advertising identifiers (IDFA)</li>
+<li>Any personally identifiable information (PII)</li>
+</ul>
+<h2>3. Cross-Device Data Transfer (Peer-to-Peer QR)</h2>
+<p>The App provides "device binding" and "QR-based unit/attendance data sync." All cross-device transfers are:</p>
+<ul>
+<li><strong>Peer-to-peer:</strong> data passes directly between two devices via QR code, <strong>never</strong> through any server</li>
+<li><strong>No cloud relay:</strong> we operate no cloud infrastructure</li>
+<li>You can disable device binding at any time in Settings</li>
+</ul>
+<h2>4. Subscriptions &amp; Payment</h2>
+<p>The App offers BASIC and FULL subscriptions via Apple In-App Purchase (settled through RevenueCat):</p>
+<ul>
+<li>Payment is processed by Apple App Store; the App never sees your credit card information</li>
+<li>RevenueCat is used solely to track entitlement status via anonymous receipt tokens; no personal data</li>
+<li>After subscription expiry or cancellation, all your local data is preserved (only feature gates re-activate)</li>
+</ul>
+<h2>5. Data Storage and Protection</h2>
+<ul>
+<li>All local data is stored within the iOS app sandbox in SQLite</li>
+<li>PIN is stored as a one-way hash and cannot be recovered</li>
+<li>With Face ID enabled, the PIN is protected by iOS Keychain Secure Enclave</li>
+<li>You may delete all local data at any time within the App (uninstalling the App also fully deletes it)</li>
+</ul>
+<h2>6. Your Rights</h2>
+<ul>
+<li>You may query, copy, modify, and delete all locally stored data at any time directly within the App</li>
+<li>You may disable Sentry crash reporting (Settings → Privacy → Disable Diagnostics)</li>
+<li>Uninstalling the App constitutes exercising your right to deletion</li>
+</ul>
+<h2>7. Children's Data</h2>
+<p>The App is rated 4+ and does not actively collect data from minors.</p>
+<h2>8. Third-Party Services</h2>
+<table>
+<thead><tr><th>Service</th><th>Purpose</th><th>Data Type</th></tr></thead><tbody>
+<tr><td>Apple App Store / IAP</td><td>Subscription payment</td><td>Collected by Apple per <a href="https://www.apple.com/legal/privacy/">Apple Privacy Policy</a></td></tr>
+<tr><td>RevenueCat</td><td>Subscription entitlement management</td><td>Anonymous receipt tokens, <a href="https://www.revenuecat.com/privacy">RevenueCat Privacy Policy</a></td></tr>
+<tr><td>Sentry</td><td>Crash &amp; performance diagnostics</td><td>Crash stack traces (no PII), <a href="https://sentry.io/privacy/">Sentry Privacy Policy</a></td></tr>
+</tbody></table>
+<h2>9. Policy Changes</h2>
+<p>If material changes are made to this policy, an in-app notice will inform you and this page will be updated. Minor edits are reflected by updating the date above.</p>
+<h2>10. Contact</h2>
+<ul>
+<li>Privacy questions: cerry0524@gmail.com</li>
+<li>GitHub Issues: <a href="https://github.com/Cerry0524/RollSight/issues">https://github.com/Cerry0524/RollSight/issues</a></li>
+</ul>
+<p><a href="./index.zh-Hant.html">繁體中文版本</a></p>
+  </main>
+</body>
+</html>
