@@ -19,6 +19,7 @@ Then push this folder as the repository root and enable GitHub Pages:
 
 ## App Store Connect URLs
 
+- iOS App Store download URL: `https://apps.apple.com/tw/app/%E5%88%B0%E9%BD%8A-rollsight/id6762076423`
 - Privacy Policy URL (zh-Hant): `https://cerry0524.github.io/RollSight-Site/privacy/index.zh-Hant.html`
 - Privacy Policy URL (en): `https://cerry0524.github.io/RollSight-Site/privacy/index.en.html`
 - Support URL: `https://cerry0524.github.io/RollSight-Site/support/`

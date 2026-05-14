@@ -4,6 +4,7 @@
 
 ## 1. App Store URL
 
+- iOS App Store download URL: `https://apps.apple.com/tw/app/%E5%88%B0%E9%BD%8A-rollsight/id6762076423`
 - Marketing URL: `https://cerry0524.github.io/RollSight-Site/`
 - Support URL: `https://cerry0524.github.io/RollSight-Site/support/`
 - Privacy Policy URL zh-Hant: `https://cerry0524.github.io/RollSight-Site/privacy/index.zh-Hant.html`
