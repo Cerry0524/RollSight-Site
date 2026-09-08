@@ -1,0 +1,218 @@
+{
+  "results": [
+    {
+      "device": "desktop",
+      "path": "",
+      "status": 200,
+      "title": "到齊 2.0 準備推出・動態 QR 與指定裝置加密｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "desktop",
+      "path": "user-guide/",
+      "status": 200,
+      "title": "2.0 功能導覽與使用者手冊｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "desktop",
+      "path": "user-guide/subscription.html",
+      "status": 200,
+      "title": "2.0 方案比較・FULL 終身暫定 NT$99｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "desktop",
+      "path": "support/",
+      "status": 200,
+      "title": "2.0 支援與聯絡｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "desktop",
+      "path": "privacy/",
+      "status": 200,
+      "title": "隱私政策・語言選擇｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "desktop",
+      "path": "privacy/index.zh-Hant.html",
+      "status": 200,
+      "title": "隱私政策｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "desktop",
+      "path": "privacy/index.en.html",
+      "status": 200,
+      "title": "Privacy Policy｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "desktop",
+      "path": "features/qr-share/",
+      "status": 200,
+      "title": "2.0 動態 QR 與加密交接・逐步匯入導覽｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "desktop",
+      "path": "features/offline-encrypted/",
+      "status": 200,
+      "title": "2.0 離線使用與本機資料保護｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "desktop",
+      "path": "use-cases/military-roll-call/",
+      "status": 200,
+      "title": "2.0 單位與軍中點名使用情境｜RollSight",
+      "width": 1440,
+      "scrollWidth": 1425,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "",
+      "status": 200,
+      "title": "到齊 2.0 準備推出・動態 QR 與指定裝置加密｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "user-guide/",
+      "status": 200,
+      "title": "2.0 功能導覽與使用者手冊｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "user-guide/subscription.html",
+      "status": 200,
+      "title": "2.0 方案比較・FULL 終身暫定 NT$99｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "support/",
+      "status": 200,
+      "title": "2.0 支援與聯絡｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "privacy/",
+      "status": 200,
+      "title": "隱私政策・語言選擇｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "privacy/index.zh-Hant.html",
+      "status": 200,
+      "title": "隱私政策｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "privacy/index.en.html",
+      "status": 200,
+      "title": "Privacy Policy｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "features/qr-share/",
+      "status": 200,
+      "title": "2.0 動態 QR 與加密交接・逐步匯入導覽｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "features/offline-encrypted/",
+      "status": 200,
+      "title": "2.0 離線使用與本機資料保護｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    },
+    {
+      "device": "mobile",
+      "path": "use-cases/military-roll-call/",
+      "status": 200,
+      "title": "2.0 單位與軍中點名使用情境｜RollSight",
+      "width": 390,
+      "scrollWidth": 375,
+      "h1": 1,
+      "brokenImages": []
+    }
+  ],
+  "errors": [],
+  "faqOpen": true,
+  "faqKeyboardClosed": true,
+  "anchorWorks": true,
+  "smallWidth": {
+    "width": 320,
+    "scrollWidth": 305
+  },
+  "largeText": {
+    "width": 320,
+    "scrollWidth": 305
+  },
+  "animationPaused": true,
+  "reducedMotion": true
+}

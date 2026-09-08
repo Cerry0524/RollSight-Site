@@ -1,0 +1,4 @@
+# 本機瀏覽器狀態與視覺驗證證據，不發布到公開網站。
+.playwright-cli/
+output/
+__pycache__/
