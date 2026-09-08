@@ -1,0 +1,45 @@
+async (page) => {
+  const pages = ['', 'user-guide/', 'user-guide/subscription.html', 'support/', 'privacy/', 'privacy/index.zh-Hant.html', 'privacy/index.en.html', 'features/qr-share/', 'features/offline-encrypted/', 'use-cases/military-roll-call/'];
+  const results = [];
+  const errors = [];
+  page.on('pageerror', e => errors.push(e.message));
+  for (const [device,width,height] of [['desktop',1440,1000],['mobile',390,844]]) {
+    await page.setViewportSize({width,height});
+    for (const [index,path] of pages.entries()) {
+      const response = await page.goto('http://127.0.0.1:8876/'+path);
+      await page.evaluate(() => {document.documentElement.style.scrollBehavior='auto'; window.scrollTo(0,0)});
+      await page.screenshot({path:`output/playwright/${index}-${device}.png`,fullPage:true});
+      const metrics = await page.evaluate(() => ({title:document.title,width:innerWidth,scrollWidth:document.documentElement.scrollWidth,h1:document.querySelectorAll('h1').length,brokenImages:[...document.images].filter(i=>!i.complete||i.naturalWidth===0).map(i=>i.src)}));
+      results.push({device,path,status:response.status(),...metrics});
+    }
+  }
+  await page.goto('http://127.0.0.1:8876/user-guide/subscription.html#faq');
+  const question=page.getByText('已有訂閱，買終身會自動取消嗎？',{exact:true});
+  await question.click();
+  const faqOpen=await question.evaluate(el=>el.parentElement.open);
+  await question.focus();await page.keyboard.press('Enter');
+  const faqKeyboardClosed=await question.evaluate(el=>!el.parentElement.open);
+  await page.goto('http://127.0.0.1:8876/user-guide/');
+  await page.getByRole('link',{name:'03 任務、預判與現場點名',exact:true}).click();
+  const anchorWorks=page.url().endsWith('#attendance');
+  await page.setViewportSize({width:320,height:740});
+  await page.goto('http://127.0.0.1:8876/');
+  const smallWidth=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth}));
+  await page.evaluate(()=>document.documentElement.style.fontSize='32px');
+  const largeText=await page.evaluate(()=>({width:innerWidth,scrollWidth:document.documentElement.scrollWidth}));
+  await page.screenshot({path:'output/playwright/large-text-mobile.png',fullPage:true});
+  await page.evaluate(()=>document.documentElement.style.fontSize='');
+  await page.setViewportSize({width:390,height:844});
+  await page.goto('http://127.0.0.1:8876/');
+  await page.screenshot({path:'output/playwright/home-mobile.png'});
+  await page.locator('#pause-qr').check();
+  const animationPaused=await page.locator('.qr-frames img').first().evaluate(e=>getComputedStyle(e).animationPlayState==='paused');
+  await page.emulateMedia({reducedMotion:'reduce'});
+  const reducedMotion=await page.locator('.qr-frames img').first().evaluate(e=>getComputedStyle(e).animationName==='none');
+  await page.emulateMedia({reducedMotion:'no-preference'});
+  await page.locator('#pause-qr').uncheck();
+  await page.setViewportSize({width:1440,height:1000});
+  await page.evaluate(()=>window.scrollTo(0,0));
+  await page.screenshot({path:'output/playwright/home-desktop.png'});
+  return {results,errors,faqOpen,faqKeyboardClosed,anchorWorks,smallWidth,largeText,animationPaused,reducedMotion};
+}

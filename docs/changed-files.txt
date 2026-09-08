@@ -1,0 +1,28 @@
+ M MAINTENANCE.md
+ M README.md
+ M features/offline-encrypted/index.html
+ M features/qr-share/index.html
+ M index.html
+ M privacy/index.en.html
+ M privacy/index.html
+ M privacy/index.zh-Hant.html
+ M sitemap.xml
+ M styles.css
+ M support/index.html
+ M use-cases/military-roll-call/index.html
+ M user-guide/index.html
+ M user-guide/subscription.html
+?? .gitignore
+?? assets/qr-demo/frame-1.svg
+?? assets/qr-demo/frame-2.svg
+?? assets/qr-demo/frame-3.svg
+?? docs/2.0-design-audit.md
+?? docs/browser-layout-followup.txt
+?? docs/browser-qa.json
+?? docs/browser-qa.txt
+?? docs/external-links.json
+?? docs/link-check.json
+?? scripts/browser_qa.js
+?? scripts/build_site.py
+?? scripts/check_links.py
+?? scripts/transport_content.py

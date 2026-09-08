@@ -1,0 +1,9 @@
+### Result
+[{"url":"/support/","width":1440,"scrollWidth":1425},{"url":"/features/qr-share/","width":1440,"scrollWidth":1425},{"url":"/features/offline-encrypted/","width":1440,"scrollWidth":1425},{"url":"/support/","width":390,"scrollWidth":375},{"url":"/features/qr-share/","width":390,"scrollWidth":375},{"url":"/features/offline-encrypted/","width":390,"scrollWidth":375}]
+### Ran Playwright code
+```js
+await (async page => {const result=[];for(const [device,width,height] of [["desktop",1440,1000],["mobile",390,844]]){await page.setViewportSize({width,height});for(const [index,path] of [[3,"support/"],[7,"features/qr-share/"],[8,"features/offline-encrypted/"]]){await page.goto("http://127.0.0.1:8876/"+path);await page.screenshot({path:`output/playwright/${index}-${device}.png`,fullPage:true});result.push(await page.evaluate(()=>({url:location.pathname,width:innerWidth,scrollWidth:document.documentElement.scrollWidth})));}}return result;})(page);
+```
+### Page
+- Page URL: http://127.0.0.1:8876/features/offline-encrypted/
+- Page Title: 2.0 離線使用與本機資料保護｜RollSight
